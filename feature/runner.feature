@@ -17,7 +17,7 @@
 ## (Comments)
 #Sample Feature Definition Template
 @strip_redirection_withoutLogin_verifieduser
-Feature: strip redirection withoutLogin verifieduser
+Feature: stripe redirection withoutLogin verifieduser
   I want to use this template for my feature file
 
   @signup
@@ -28,7 +28,7 @@ Feature: strip redirection withoutLogin verifieduser
 
   @monthly_to_monthly_scenario_logout_state
   Scenario Outline: monthly to basic stripe navigation
-    Given set the credential to current plan <current_planid> and <current_mode>
+    Given set the credential to current plan <current_planid> and <current_mode> with <selected_planid>
     And choose the plan <selected_planid> and <selected_mode>
     When login
     Then page navigation <page>

@@ -81,6 +81,25 @@ public class test_step extends elements {
 		mail.add(email_id);
 		return mail;
 	}
+	
+	public void change_plan_marketing_site(WebDriver driver,int plan,String mode,String action, String email_id) {
+		driver.get("https://onthefly-qa.contus.us/register?planid="+plan+"&mode="+mode);
+		switch (action) {
+		case "login":
+			driver.findElement(signup_login).click();
+			
+			login(driver, email_id, "Welcome@123");
+			break;
+			
+		case "register":
+			signup(driver, email_id);
+			break;
+
+		default:
+			System.out.println("param not passed");
+			break;
+		}
+	}
 
 	
 }

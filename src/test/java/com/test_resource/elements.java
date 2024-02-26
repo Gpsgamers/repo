@@ -10,7 +10,8 @@ public class elements {
 	By signup_Password = By.xpath("//input[@id='password']");
 	By signup_checkBox = By.xpath("//input[contains(@name,'CheckBox')]");
 	By signup_createAccount = By.xpath("//button[text()='Create Account']");
-
+	By signup_login = By.xpath("//*[text()='Sign In']");
+	
 	By login_email = By.xpath("//input[@name='email']");
 	By login_password = By.xpath("//input[@name='password']");
 	By login_signin = By.xpath("//div[contains(text(),'Sign In')]");
